@@ -17,24 +17,22 @@ import Footer from './Pages/Footer'
 function App() {
 
   return (
-    <>
-      <h2>
-        App
+    <> 
+      <Router>
         <Navbar/>
-        <Router>
-          <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/everything' element={<Everything/>}/>
-            <Route path='/womens' element={<Womens/>}/>
-            <Route path='/men' element={<Men/>}/>
-            <Route path='/accessories' element={<Accessories/>}/>
-            <Route path='/about' element={<About/>}/>
-            <Route path='/contact' element={<Contact/>}/>
-            <Route path='/product' element={<Product/>}/>
-          </Routes>
-        </Router>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/everything' element={<Everything/>}/>
+          <Route path='/womens' element={<Womens/>}/>
+          <Route path='/men' element={<Men/>}/>
+          <Route path='/accessories' element={<Accessories/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/product' element={<Product/>}/>
+        </Routes>
         <Footer/>
-      </h2>
+      </Router>
+        
     </>
   )
 }
