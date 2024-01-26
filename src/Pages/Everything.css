@@ -1,0 +1,9 @@
+.product-bag{
+    display: none;
+    border: none;
+    cursor: pointer;
+}
+
+.product-name:hover .product-bag{
+    display: flex;
+}

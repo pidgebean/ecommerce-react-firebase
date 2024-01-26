@@ -15,7 +15,7 @@ import Product from './Pages/Product'
 import Footer from './Pages/Footer'
 
 function App() {
-
+  const [title, setTitle] = useState("");
   return (
     <> 
       <Router>
@@ -28,7 +28,7 @@ function App() {
           <Route path='/accessories' element={<Accessories/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/contact' element={<Contact/>}/>
-          <Route path='/product' element={<Product/>}/>
+          <Route path='/product' element={<Product />}/>
         </Routes>
         <Footer/>
       </Router>
